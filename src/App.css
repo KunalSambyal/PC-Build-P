@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  width: 100%;
+  height: 100dvh;
+  background-color: hsl(0, 0%, 0%);
+}
+
+.navbar {
+  background-color: hsl(0, 0%, 10%);
+  color: hsl(0, 0%, 95%);
+  height: 72px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.navbar .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.2vmax;
+  margin-right: 10px;
+}
+
+.nav-logo h2 {
+  font-weight: 600;
+  font-size: clamp(20px, 2vmin, 24px);
+}
+
+.navbar img {
+  height: 40px;
+  width: 40px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1.5vmax;
+  list-style: none;
+  color: hsl(0, 0%, 90%);
+}
+
+.navbar ul li {
+  font-size: clamp(12px, 2vmin, 16px);
+  white-space: nowrap;
+}
+
+ul li:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 80%);
+}
+
+.navbar .search {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  height: 50px;
+  width: clamp(2vmax, 600px, 30vmax);
+}
+
+.search .icon {
+  padding: 0.5em;
+  height: 30px;
+  background-color: hsl(0, 0%, 20%);
+  border-right: 1px solid hsl(0, 0%, 90%);
+  display: flex;
+  align-items: center;
+  border-radius: 0.5em 0 0 0.5em;
+}
+
+.search .icon i {
+  font-size: clamp(4px, 2vmax, 14px);
+}
+
+.search input {
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+  height: 30px;
+  padding: 0.5em;
+  border-radius: 0 0.5em 0.5em 0;
+  width: clamp(2vmax, 600px, 30vmax);
+  color: hsl(0, 0%, 90%);
+}
+
+.search input::placeholder {
+  color: hsl(0, 0%, 90%);
+}
+
+.navbar .nav-icons {
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.nav-icons .fa-magnifying-glass {
+  display: none;
+}
+
+.nav-icons .fa-bars {
+  font-size: 24px;
+  display: none;
+
+}
+
+input:focus {
+  border: none; /* removes border when typing (focused) */
+  outline: none; /* ensures no outline shows */
+}
+
+i:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 80%);
+}
+
+@media (max-width: 900px) {
+  .navbar .search {
+    display: none;
+  }
+  .navbar .nav-icons .fa-magnifying-glass {
+    display: inline;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    height: 100px;
+  }
+  .nav-icons .fa-bars {
+    display: block;
+  }
+  .navbar .hide {
+    display: none;
+  }
+  .navbar .nav-icons .hide {
+    display: none;
+  }
+}
