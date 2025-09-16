@@ -7,12 +7,12 @@ function Hero() {
       <div className="row align-items-center">
         
         {/* Left Column */}
-        <div className="col-md-6">
+        <div className="col-md-6 text-white">
           <span className="badge bg-primary mb-3">New Generation Computing</span>
           <h1 className="fw-bold">
             Build Your <span className="text-primary">Dream Setup</span>
           </h1>
-          <p className="text-muted">
+          <p className="text-light">
             Discover cutting-edge gaming rigs, professional workstations,
             and custom builds tailored to your needs. Experience the future
             of computing today.
@@ -28,10 +28,10 @@ function Hero() {
         </div>
 
         {/* Right Column */}
-        <div className="col-md-6 text-center">
-          <div className="p-3 rounded-4 shadow-lg bg-dark hero-image-wrapper">
+        <div className="col-md-6 text-center" >
+          <div className="p-3 rounded-4 shadow-lg hero-image-wrapper">
             <img
-              src="/public/images/hero-img.jpg"
+              src="public/images/hero-img.jpg"
               className="img-fluid rounded-3"
               alt="Setup"
             />

@@ -1,7 +1,8 @@
 .hero-image-wrapper {
   position: relative;
   background: linear-gradient(135deg, #6a11cb, #2575fc);
-  padding: 5px; /* space for border glow */
+  padding: 6px; /* glow thickness */
+  border-radius: 16px;
 }
 
 .hero-image-wrapper img {

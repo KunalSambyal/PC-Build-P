@@ -1,0 +1,25 @@
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Gradient colors */
+.bg-gradient-pink {
+  background: linear-gradient(135deg, #ff6ec7, #a445b2);
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.bg-gradient-green {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.bg-gradient-orange {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
